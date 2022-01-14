@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     background: #F8F8F8;
     color: #333;
+    font-family: "Cormorant Garamond", Arial, serif;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 
 .the-header {
@@ -17,7 +33,7 @@ body {
     padding: 14px 28px 12px 28px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Reem Kufi",Arial,sans-serif;
+    font-family: "Reem Kufi", Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 0.3rem;
 }
@@ -41,7 +57,8 @@ body {
     width: 94%;
 }
 
-.wrap, .wrap--alt {
+.wrap,
+.wrap--alt {
     max-width: 1280px;
 }
 
@@ -50,7 +67,8 @@ body {
     margin-right: -12px;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
@@ -66,4 +84,178 @@ ol, ul {
 .the-navigation ul li i {
     color: black;
     font-size: 28px;
+}
+
+.hgroup--index {
+    margin-bottom: 100px;
+}
+
+.hgroup {
+    font-size: 5.3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 33vw;
+}
+
+.hgroup h1 {
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: inherit;
+}
+
+.hgroup h2 {
+    color: #999;
+    font-size: 0.4em;
+
+
+}
+
+.bkg--grey--100 {
+    background: #333;
+}
+
+.cf,
+.the-header {
+    zoom: 1;
+}
+
+.index__portfolio {
+    margin-top: -100px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.cf:before, .the-header:before, .cf:after, .the-header:after {
+    content: "";
+    display: table;
+    width: 0;
+}
+
+.reemkufi-loaded .logo,
+.reemkufi-loaded .the-footer,
+.reemkufi-loaded .share,
+.reemkufi-loaded .index__portfolio h3,
+.index__portfolio .reemkufi-loaded h3,
+.reemkufi-loaded .index__portfolio h4,
+.index__portfolio .reemkufi-loaded h4,
+.reemkufi-loaded .index__portfolio__secondary li,
+.index__portfolio__secondary .reemkufi-loaded li {
+    font-family: "Reem Kufi", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+}
+
+.index__portfolio h3 {
+    color: rgba(51, 51, 51, 0.2);
+    padding-top: 0;
+    /* color: rgba(248,248,248,0.2); */
+    padding: 20px 0 13px 0;
+    text-transform: uppercase;
+}
+
+.index__portfolio__primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.index__portfolio__primary__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33.3%;
+    flex: 1 1 33.3%;
+    padding-bottom: 27px;
+}
+
+.index__portfolio__primary__item {
+    background: #FFF;
+    box-shadow: 0 0 20px 0 rgba(102, 102, 102, 0.2);
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.index__portfolio__primary__item__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 180px;
+}
+
+a {
+    outline: none;
+}
+
+.index__portfolio__primary__item__content {
+    padding-bottom: 12px;
+}
+
+.index__portfolio h4 {
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.index__portfolio p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 8px 0;
+}
+
+.index__portfolio a {
+    color: #333;
+    text-decoration: none;
+}
+
+.index__portfolio__primary__item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.index__portfolio__primary__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33.3%;
+    flex: 1 1 33.3%;
+    padding-bottom: 27px;
+}
+
+.index__portfolio img {
+    width: 160px;
+}
+
+img, svg {
+    display: block;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
 }
